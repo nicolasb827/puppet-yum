@@ -3,7 +3,7 @@
 # This class installs the mysql_community repos
 #
 class yum::repo::mysql_community(
-    $enabled_version  = '5.6'
+    $enabled_version  = '5.7'
 ) {
     yum::managed_yumrepo { 'mysql-connectors-community':
       descr         => 'MySQL Connectors Community',
